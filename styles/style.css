@@ -3,13 +3,17 @@
 
 /* Give the header element a background color */
 header {
-  background-color: #3772FF;
+  background-color: tomato;
 }
 
 /* Center everything in the header and footer */
 header, footer {
   text-align: center;
   /*vertical-align: middle*/
+}
+
+header ul{
+  padding-left: 0px;
 }
 
 /* All text to Helvetica */
@@ -97,14 +101,14 @@ article:nth-of-type(odd) .post-content {
 }
 
 /* All Top Kitten's Profile Photos Rounded */
-main>article:first-of-type img{
+img[alt="profile photo"]{
   border-radius: 25px;
 }
 
 /*** BONUS ***/
 
 /* Add a cat emoji before a Cat's Name (in the heading content)*/
-header h1::before {
+article h3>a::before {
   content: "😸";
 }
 
